@@ -30,8 +30,15 @@
         margin: 1.8rem auto; border-radius: 18px; overflow: hidden;
         box-shadow: 0 14px 40px rgba(0,0,0,.45);
       }
-      .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+      .video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
       .shot { display: block; width: 100%; max-width: 320px; margin: 1.8rem auto; border-radius: 14px; }
+      .strip {
+        display: flex; gap: 14px; overflow-x: auto; padding: .6rem .2rem 1.4rem;
+        margin: .4rem auto 0; max-width: 720px; scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      .strip img { height: 380px; border-radius: 14px; scroll-snap-align: center; flex: 0 0 auto; box-shadow: 0 8px 22px rgba(0,0,0,.35); }
+      .more { text-align: center; color: #d6f0df; font-size: .9rem; margin: -.4rem 0 0; opacity: .85; }
       ul.feat { list-style: none; padding: 0; margin: 1.8rem auto; max-width: 420px; }
       ul.feat li { padding: 9px 0; font-size: 1.05rem; }
       ul.feat li::before { content: "⚽ "; }
@@ -55,10 +62,9 @@
       </header>
 
       <div class="video">
-        <iframe src="https://www.youtube-nocookie.com/embed/afvi3L2MNFA?rel=0&playsinline=1"
-                title="טריוויה כדורגל ישראלי — פרומו"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <video src="promo.mp4" poster="poster.jpg"
+               autoplay muted loop playsinline preload="metadata"
+               aria-label="טריוויה כדורגל ישראלי — פרומו"></video>
       </div>
 
       <ul class="feat">
@@ -70,6 +76,13 @@
       </ul>
 
       <img class="shot" src="question.png" alt="שאלת כדורגל מתוך המשחק">
+
+      <div class="strip">
+        <img src="shot1.jpg" alt="עזרות ורמזים">
+        <img src="shot2.jpg" alt="קלפי מועדונים לאיסוף">
+        <img src="shot3.jpg" alt="לוח השיאים הגלובלי">
+      </div>
+      <p class="more">החליקו לעוד →</p>
 
       <div class="cta">
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.dim.socccertrivia">הורידו מ‑Google Play</a>
