@@ -7,7 +7,7 @@
     <meta name="description" content="The ultimate Premier League trivia game. Hundreds of questions on clubs, players, legends and history. Free, offline, no sign-up.">
     <meta property="og:title" content="English Football Quiz — Premier League Trivia">
     <meta property="og:description" content="Hundreds of Premier League questions. Lifelines on every question, collectible club cards, a global leaderboard. Free & offline.">
-    <meta property="og:image" content="https://dimrix21.github.io/epl/question.png">
+    <meta property="og:image" content="https://dimrix21.github.io/epl/question.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <style>
       :root { color-scheme: light dark; }
@@ -30,8 +30,15 @@
         margin: 1.8rem auto; border-radius: 18px; overflow: hidden;
         box-shadow: 0 14px 40px rgba(0,0,0,.45);
       }
-      .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+      .video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
       .shot { display: block; width: 100%; max-width: 320px; margin: 1.8rem auto; border-radius: 14px; }
+      .strip {
+        display: flex; gap: 14px; overflow-x: auto; padding: .6rem .2rem 1.4rem;
+        margin: .4rem auto 0; max-width: 720px; scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      .strip img { height: 380px; border-radius: 14px; scroll-snap-align: center; flex: 0 0 auto; box-shadow: 0 8px 22px rgba(0,0,0,.35); }
+      .more { text-align: center; color: #d6f0df; font-size: .9rem; margin: -.4rem 0 0; opacity: .85; }
       ul.feat { list-style: none; padding: 0; margin: 1.8rem auto; max-width: 420px; }
       ul.feat li { padding: 9px 0; font-size: 1.05rem; }
       ul.feat li::before { content: "⚽ "; }
@@ -55,10 +62,9 @@
       </header>
 
       <div class="video">
-        <iframe src="https://www.youtube-nocookie.com/embed/BMK1UMud67k?rel=0&playsinline=1"
-                title="English Football Quiz promo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <video src="promo.mp4" poster="poster.jpg"
+               autoplay muted loop playsinline preload="metadata"
+               aria-label="English Football Quiz gameplay promo"></video>
       </div>
 
       <ul class="feat">
@@ -69,7 +75,14 @@
         <li>Free, offline, no sign-up</li>
       </ul>
 
-      <img class="shot" src="question.png" alt="In-game Premier League question">
+      <img class="shot" src="question.jpg" alt="In-game Premier League question">
+
+      <div class="strip">
+        <img src="shot1.jpg" alt="Lifelines and hints">
+        <img src="shot2.jpg" alt="Collectible club cards">
+        <img src="shot3.jpg" alt="Global leaderboard">
+      </div>
+      <p class="more">Swipe to see more →</p>
 
       <div class="cta">
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.dim.socccertrivia.epl">Get it on Google Play</a>
