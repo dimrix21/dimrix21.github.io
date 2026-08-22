@@ -42,13 +42,15 @@
       ul.feat { list-style: none; padding: 0; margin: 1.8rem auto; max-width: 420px; }
       ul.feat li { padding: 9px 0; font-size: 1.05rem; }
       ul.feat li::before { content: "⚽ "; }
-      .cta { text-align: center; margin: 2.4rem 0 1rem; }
+      .cta { text-align: center; margin: 2.4rem 0 1rem; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+      .cta .free { flex: 1 0 100%; }
       .btn {
         display: inline-block; background: #ffd23f; color: #14331c; font-weight: 700;
         font-size: 1.15rem; padding: 16px 38px; border-radius: 999px; text-decoration: none;
         box-shadow: 0 8px 24px rgba(0,0,0,.35); transition: transform .12s ease;
       }
       .btn:hover { transform: translateY(-2px); text-decoration: none; }
+      .btn.ios { background: #fff; color: #14331c; }
       .free { text-align: center; color: #d6f0df; font-size: .95rem; margin-top: .6rem; }
       footer { text-align: center; margin-top: 3rem; font-size: .85rem; color: #bfe0cb; }
       footer a { color: #ffe98a; text-decoration: none; }
@@ -86,6 +88,7 @@
 
       <div class="cta">
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.dim.socccertrivia">הורידו מ‑Google Play</a>
+        <a class="btn ios" href="https://apps.apple.com/il/app/id6798873275">הורידו מ‑App Store</a>
         <p class="free">חינם · עובד אופליין · בלי הרשמה</p>
       </div>
 
