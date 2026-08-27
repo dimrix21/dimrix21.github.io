@@ -97,6 +97,7 @@
     <ul>
       <li><strong>Anonymous by default.</strong> On first launch the app creates a random anonymous identifier in Firebase Authentication. No email, name, or other personal information is required to use Kidu.</li>
       <li><strong>Optional email sign-in.</strong> A parent may create an account with an email address and password (behind the parental gate) to keep generated characters across devices. We store the email address and a hashed password in Firebase Authentication and nothing else about the parent.</li>
+      <li><strong>On-device machine learning (ML Kit).</strong> Face detection, image labeling and subject segmentation run on the device with Google ML Kit. Your photos are not sent to Google. ML Kit does send Google anonymous diagnostics about the API itself (device model, OS version, app version, a per-installation diagnostic identifier, latency and error codes) as described in Google's ML Kit terms; this contains no image data and is not shared further.</li>
       <li><strong>Push notification token.</strong> On Android, the app may register a Firebase Cloud Messaging token so it can notify the parent when a character is ready. The token identifies the app installation, not a person.</li>
     </ul>
 
@@ -157,6 +158,7 @@
     <ul>
       <li><strong>אנונימי כברירת מחדל.</strong> בהפעלה הראשונה האפליקציה יוצרת מזהה אנונימי אקראי ב‑Firebase Authentication. לא נדרשים אימייל, שם או מידע אישי אחר כדי להשתמש בקידו.</li>
       <li><strong>התחברות באימייל — אופציונלית.</strong> הורה יכול ליצור חשבון עם כתובת אימייל וסיסמה (מאחורי שער ההורים) כדי לשמור את הדמויות שנוצרו בין מכשירים. אנחנו שומרים את כתובת האימייל וסיסמה מוצפנת ב‑Firebase Authentication ותו לא.</li>
+      <li><strong>למידת מכונה במכשיר (ML Kit).</strong> זיהוי פנים, תיוג תמונות והפרדת דמות מהרקע רצים במכשיר באמצעות Google ML Kit. התמונות שלכם אינן נשלחות לגוגל. ML Kit כן שולח לגוגל נתוני אבחון אנונימיים על ה‑API עצמו (דגם מכשיר, גרסת מערכת, גרסת אפליקציה, מזהה אבחון להתקנה, זמני תגובה וקודי שגיאה) כמתואר בתנאי ML Kit של גוגל; הם אינם כוללים נתוני תמונה ואינם משותפים הלאה.</li>
       <li><strong>אסימון התראות.</strong> באנדרואיד האפליקציה עשויה לרשום אסימון Firebase Cloud Messaging כדי להודיע להורה כשדמות מוכנה. האסימון מזהה את ההתקנה, לא אדם.</li>
     </ul>
 
