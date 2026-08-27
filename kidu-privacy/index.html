@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Kidu</title>
+  <meta name="description" content="Privacy policy for Kidu, the family photo game app for young children." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --link: #0b5fff;
+      --rule: #e3e3e3;
+      --code-bg: #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15171a;
+        --fg: #ececec;
+        --muted: #a8aaad;
+        --link: #6ea8ff;
+        --rule: #2a2d31;
+        --code-bg: #1f2125;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Hebrew", "Arial Hebrew", sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+      padding: 32px 20px 80px;
+    }
+    main { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin-top: 0; }
+    h2 { font-size: 1.35rem; margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid var(--rule); }
+    h3 { font-size: 1.1rem; margin-top: 1.6em; }
+    .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.5em; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    .lang-switch { margin: 1em 0 2em; }
+    .lang-switch a { display: inline-block; padding: 6px 14px; border: 1px solid var(--rule); border-radius: 999px; margin-inline-end: 8px; }
+    .section { margin-bottom: 2em; }
+    .en { direction: ltr; text-align: left; }
+    .he { direction: rtl; text-align: right; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 3em 0; }
+    code { background: var(--code-bg); padding: 1px 6px; border-radius: 4px; font-size: .92em; }
+    .scope {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin: 1.5em 0;
+      font-size: .98rem;
+    }
+    .scope strong { display: block; margin-bottom: 4px; }
+    .footer-note { color: var(--muted); font-size: .9rem; margin-top: 3em; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — Kidu</h1>
+  <p class="meta">Effective date: August 27, 2026 · Developer: Hezi Dimri · Contact: <a href="mailto:hezi21@gmail.com">hezi21@gmail.com</a></p>
+
+  <div class="scope">
+    <strong>App covered by this policy</strong>
+    Kidu / קידו — Android package <code>com.dim.mymatcher</code>, iOS bundle <code>com.dim.mymatcher</code>
+  </div>
+
+  <div class="lang-switch"><a href="#english">English</a><a href="#hebrew">עברית</a></div>
+
+  <section id="english" class="en">
+    <h2>1. Overview</h2>
+    <p>Kidu is a game app for young children built around their own family photos. This policy describes what information Hezi Dimri ("we") handles, what stays on the device, what is sent to our servers, and how a parent can delete it. Kidu is designed for children and follows the Google Play Families and Apple Kids Category policies: it contains no advertising, no third-party analytics, no external links outside a parental gate, and no in-app purchases at this time.</p>
+
+    <h2>2. What stays on the device</h2>
+    <ul>
+      <li><strong>Family photos.</strong> The photos a parent selects, and any photos the app scans on the device to find more pictures of the same family members, are read and stored only on the device. They are never uploaded.</li>
+      <li><strong>Face data.</strong> To recognise the same family member across photos, the app computes face embeddings (numeric descriptors) on the device. These stay on the device, are never uploaded, and are deleted with the app data.</li>
+      <li><strong>Names and tags.</strong> The names a parent assigns to family members, and which photo shows whom, are stored on the device only.</li>
+      <li><strong>Game progress and settings.</strong> Stored on the device only.</li>
+    </ul>
+    <p>Cloud backup of this data is disabled at the operating-system level (<code>allowBackup=false</code>).</p>
+
+    <h2>3. What is sent to our servers — creating a character</h2>
+    <p>Kidu can turn a family member into an animated game character. This is the only feature that sends any image data off the device, and it only happens when a parent explicitly starts it.</p>
+    <ul>
+      <li><strong>What is sent:</strong> a cut-out of the chosen person or pet only (the subject is segmented from the photo on the device; the background and everyone else in the photo are removed before anything leaves the phone), the character's name, and the chosen art style.</li>
+      <li><strong>Processed ephemerally, never stored:</strong> the cut-out is held in server memory only for the duration of the generation, passed to the image-generation services below, and discarded. We do not keep the cut-out, and it is not used for any other purpose.</li>
+      <li><strong>Service providers:</strong> generation uses Google Gemini (Google LLC) and AutoSprite (autosprite.io) as processors acting on our behalf, under our instructions, for this purpose only. They are not permitted to use the image for their own purposes.</li>
+      <li><strong>What is stored (user-generated content):</strong> the resulting animated character — the generated sprite sheets and a small preview — is stored in Firebase Cloud Storage and Cloud Firestore (Google LLC) under the account's identifier, so the character survives reinstalls and device changes. This generated content is the only image data we retain. It is linked to the account and deleted with it (section 6).</li>
+    </ul>
+
+    <h2>4. Account</h2>
+    <ul>
+      <li><strong>Anonymous by default.</strong> On first launch the app creates a random anonymous identifier in Firebase Authentication. No email, name, or other personal information is required to use Kidu.</li>
+      <li><strong>Optional email sign-in.</strong> A parent may create an account with an email address and password (behind the parental gate) to keep generated characters across devices. We store the email address and a hashed password in Firebase Authentication and nothing else about the parent.</li>
+      <li><strong>Push notification token.</strong> On Android, the app may register a Firebase Cloud Messaging token so it can notify the parent when a character is ready. The token identifies the app installation, not a person.</li>
+    </ul>
+
+    <h2>5. What we do not do</h2>
+    <ul>
+      <li>No advertising and no advertising identifiers.</li>
+      <li>No third-party analytics or tracking SDKs.</li>
+      <li>No sale of data, and no sharing with third parties beyond the service providers named in section 3.</li>
+      <li>No collection of location, contacts, or device identifiers beyond what Firebase Authentication and Cloud Messaging need to function.</li>
+      <li>No behavioural profiling of children.</li>
+    </ul>
+
+    <h2>6. Deletion</h2>
+    <ul>
+      <li><strong>In the app:</strong> Grown-ups area → Account → <em>Delete the account</em>. This deletes the account in Firebase Authentication, every generated character and its files on our servers, and the local copies. The next launch starts fresh.</li>
+      <li><strong>Local data</strong> (photos, face data, names, progress) is deleted by uninstalling the app or clearing its data.</li>
+      <li><strong>By email:</strong> write to <a href="mailto:hezi21@gmail.com">hezi21@gmail.com</a> with the email address of the account and we will delete it within 30 days.</li>
+    </ul>
+
+    <h2>7. Children's privacy</h2>
+    <p>Kidu is intended to be set up and supervised by a parent or guardian; the child plays, the parent decides. Account creation, character creation, and every setting live behind a parental gate. We do not knowingly collect personal information from a child directly. If you believe a child has provided personal information without a parent's consent, contact us and we will delete it.</p>
+
+    <h2>8. Security &amp; retention</h2>
+    <p>Data in transit is encrypted (HTTPS). Server-side data is held in Google Cloud / Firebase with access restricted to the account that created it. Generated characters are retained until the account is deleted. Image cut-outs sent for generation are not retained at all.</p>
+
+    <h2>9. Changes</h2>
+    <p>Changes to this policy are published at this address with a new effective date.</p>
+
+    <h2>10. Contact</h2>
+    <p>Hezi Dimri — <a href="mailto:hezi21@gmail.com">hezi21@gmail.com</a></p>
+  </section>
+
+  <hr />
+
+  <section id="hebrew" class="he" dir="rtl" lang="he">
+    <h2>1. כללי</h2>
+    <p>קידו היא אפליקציית משחקים לילדים צעירים סביב תמונות המשפחה שלהם. מסמך זה מתאר איזה מידע חזי דימרי ("אנחנו") מטפלים בו, מה נשאר במכשיר, מה נשלח לשרתים שלנו, ואיך הורה יכול למחוק אותו. קידו מיועדת לילדים ופועלת לפי מדיניות Google Play Families ו‑Apple Kids Category: אין בה פרסומות, אין אנליטיקס של צד שלישי, אין קישורים חיצוניים מחוץ לשער ההורים, ואין רכישות בתוך האפליקציה בשלב זה.</p>
+
+    <h2>2. מה נשאר במכשיר</h2>
+    <ul>
+      <li><strong>תמונות המשפחה.</strong> התמונות שההורה בוחר, וכל תמונה שהאפליקציה סורקת במכשיר כדי למצוא עוד תמונות של אותם בני משפחה, נקראות ונשמרות במכשיר בלבד. הן לעולם לא מועלות.</li>
+      <li><strong>נתוני פנים.</strong> כדי לזהות את אותו בן משפחה בתמונות שונות, האפליקציה מחשבת במכשיר מאפייני פנים מספריים (embeddings). הם נשארים במכשיר, לא מועלים, ונמחקים עם נתוני האפליקציה.</li>
+      <li><strong>שמות ותיוגים.</strong> השמות שההורה נותן לבני המשפחה, ומי מופיע באיזו תמונה, נשמרים במכשיר בלבד.</li>
+      <li><strong>התקדמות במשחקים והגדרות.</strong> במכשיר בלבד.</li>
+    </ul>
+    <p>גיבוי ענן של נתונים אלה מבוטל ברמת מערכת ההפעלה (<code>allowBackup=false</code>).</p>
+
+    <h2>3. מה נשלח לשרתים — יצירת דמות</h2>
+    <p>קידו יכולה להפוך בן משפחה לדמות משחק מונפשת. זו התכונה היחידה ששולחת נתוני תמונה מחוץ למכשיר, והיא מופעלת רק כשהורה מתחיל אותה במפורש.</p>
+    <ul>
+      <li><strong>מה נשלח:</strong> גזיר של האדם או חיית המחמד שנבחרו בלבד (הדמות מופרדת מהתמונה במכשיר; הרקע וכל מי שמופיע בתמונה מלבדה מוסרים לפני שמשהו עוזב את הטלפון), שם הדמות וסגנון הציור שנבחר.</li>
+      <li><strong>עיבוד זמני, ללא שמירה:</strong> הגזיר מוחזק בזיכרון השרת רק למשך היצירה, מועבר לשירותי יצירת התמונה שלהלן, ונמחק. איננו שומרים את הגזיר, והוא אינו משמש לשום מטרה אחרת.</li>
+      <li><strong>ספקי שירות:</strong> היצירה משתמשת ב‑Google Gemini (Google LLC) וב‑AutoSprite (autosprite.io) כמעבדים הפועלים מטעמנו, לפי הוראותינו, למטרה זו בלבד. אסור להם להשתמש בתמונה למטרותיהם.</li>
+      <li><strong>מה נשמר (תוכן שנוצר על ידי המשתמש):</strong> הדמות המונפשת שנוצרה — גיליונות הספרייט ותצוגה מקדימה קטנה — נשמרת ב‑Firebase Cloud Storage וב‑Cloud Firestore (Google LLC) תחת מזהה החשבון, כדי שהדמות תשרוד התקנה מחדש והחלפת מכשיר. התוכן שנוצר הוא נתוני התמונה היחידים שאנחנו שומרים. הוא מקושר לחשבון ונמחק איתו (סעיף 6).</li>
+    </ul>
+
+    <h2>4. חשבון</h2>
+    <ul>
+      <li><strong>אנונימי כברירת מחדל.</strong> בהפעלה הראשונה האפליקציה יוצרת מזהה אנונימי אקראי ב‑Firebase Authentication. לא נדרשים אימייל, שם או מידע אישי אחר כדי להשתמש בקידו.</li>
+      <li><strong>התחברות באימייל — אופציונלית.</strong> הורה יכול ליצור חשבון עם כתובת אימייל וסיסמה (מאחורי שער ההורים) כדי לשמור את הדמויות שנוצרו בין מכשירים. אנחנו שומרים את כתובת האימייל וסיסמה מוצפנת ב‑Firebase Authentication ותו לא.</li>
+      <li><strong>אסימון התראות.</strong> באנדרואיד האפליקציה עשויה לרשום אסימון Firebase Cloud Messaging כדי להודיע להורה כשדמות מוכנה. האסימון מזהה את ההתקנה, לא אדם.</li>
+    </ul>
+
+    <h2>5. מה אנחנו לא עושים</h2>
+    <ul>
+      <li>אין פרסומות ואין מזהי פרסום.</li>
+      <li>אין אנליטיקס או מעקב של צד שלישי.</li>
+      <li>אין מכירת נתונים, ואין שיתוף עם צדדים שלישיים מעבר לספקי השירות שבסעיף 3.</li>
+      <li>אין איסוף מיקום, אנשי קשר או מזהי מכשיר מעבר לנדרש לפעולת Firebase Authentication ו‑Cloud Messaging.</li>
+      <li>אין פרופיל התנהגותי של ילדים.</li>
+    </ul>
+
+    <h2>6. מחיקה</h2>
+    <ul>
+      <li><strong>בתוך האפליקציה:</strong> אזור מבוגרים ← חשבון ← <em>מחיקת החשבון</em>. פעולה זו מוחקת את החשבון ב‑Firebase Authentication, כל דמות שנוצרה וקבציה בשרתים שלנו, ואת העותקים המקומיים. ההפעלה הבאה מתחילה מחדש.</li>
+      <li><strong>נתונים מקומיים</strong> (תמונות, נתוני פנים, שמות, התקדמות) נמחקים בהסרת האפליקציה או בניקוי הנתונים שלה.</li>
+      <li><strong>באימייל:</strong> כתבו ל‑<a href="mailto:hezi21@gmail.com">hezi21@gmail.com</a> עם כתובת האימייל של החשבון ונמחק אותו תוך 30 יום.</li>
+    </ul>
+
+    <h2>7. פרטיות ילדים</h2>
+    <p>קידו מיועדת להגדרה ולפיקוח של הורה או אפוטרופוס; הילד משחק, ההורה מחליט. יצירת חשבון, יצירת דמות וכל הגדרה נמצאות מאחורי שער הורים. איננו אוספים ביודעין מידע אישי ישירות מילד. אם לדעתכם ילד מסר מידע אישי ללא הסכמת הורה, פנו אלינו ונמחק אותו.</p>
+
+    <h2>8. אבטחה ושמירה</h2>
+    <p>נתונים בתעבורה מוצפנים (HTTPS). נתונים בצד השרת מוחזקים ב‑Google Cloud / Firebase עם גישה מוגבלת לחשבון שיצר אותם. דמויות שנוצרו נשמרות עד מחיקת החשבון. גזירי תמונה שנשלחו ליצירה אינם נשמרים כלל.</p>
+
+    <h2>9. שינויים</h2>
+    <p>שינויים במדיניות זו מתפרסמים בכתובת זו עם תאריך תחולה חדש.</p>
+
+    <h2>10. יצירת קשר</h2>
+    <p>חזי דימרי — <a href="mailto:hezi21@gmail.com">hezi21@gmail.com</a></p>
+  </section>
+
+  <p class="footer-note">This page is the privacy policy URL submitted with Kidu to Google Play and the App Store.</p>
+</main>
+</body>
+</html>
