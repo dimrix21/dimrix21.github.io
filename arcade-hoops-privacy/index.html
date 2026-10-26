@@ -62,16 +62,16 @@
 <body>
 <main>
   <h1>Privacy Policy — Arcade Hoops</h1>
-  <p class="meta">Effective date: October 26, 2026 · Developer: Hezi Dimri · Contact: <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a></p>
+  <p class="meta">Effective date: October 27, 2026 · Developer: Hezi Dimri · Contact: <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a></p>
 
   <div class="scope">
     <strong>App covered by this policy</strong>
-    Arcade Hoops, listed in the stores as "Basketball Arcade Machines 3D" — Android package <code>com.dimrix.arcadehoops</code>
+    Arcade Hoops, listed in the stores as "Basketball Arcade Machines 3D" — Android package and iOS bundle <code>com.dimrix.arcadehoops</code>
   </div>
 
   <section class="en">
     <h2>1. Overview</h2>
-    <p>Arcade Hoops is an arcade basketball game. It needs no account and never asks for your name, email, photos, contacts or location. To learn how the game is played and improve it, it uses Google Firebase Analytics, which collects anonymous usage statistics described below. There is no advertising in the game.</p>
+    <p>Arcade Hoops is an arcade basketball game. It needs no account, password or email, and never asks for your photos, contacts or location. To learn how the game is played and improve it, it uses Google Firebase Analytics, which collects anonymous usage statistics described below. From version 1.1 the game also has a world ranking (section 4), which stores a player name of your choice and your best scores on our servers. There is no advertising in the game.</p>
 
     <h2>2. What stays on your device</h2>
     <ul>
@@ -89,24 +89,38 @@
     <p>This information is not linked to your name or any account, is not used for advertising, and is not sold. The game does not use the device's advertising ID, and every advertising signal is switched off. Google processes the data under its own terms: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Analytics data is kept for the retention period set in Google Analytics (at most 14 months) and then deleted.</p>
     <p>To reset the app-instance identifier, clear the app's data or reinstall the game.</p>
 
-    <h2>4. What we do not do</h2>
+    <h2>4. The world ranking (version 1.1 and later)</h2>
+    <p>Each machine in the game has a world ranking of the players' best scores. To place you on it, the game keeps a small record for you on Google Firebase (Firebase Authentication and Cloud Firestore, services of Google LLC):</p>
     <ul>
-      <li>No account, sign-in, email or name is ever requested.</li>
+      <li><strong>A random user ID</strong> created by Firebase the first time you play a round. It is not your name, email or phone number.</li>
+      <li><strong>Your player name.</strong> The game gives you one at first (for example "PLAYER 4821", or the name of your Google Play Games or Game Center profile) and you can change it at any time in the game's Profile.</li>
+      <li><strong>Your best score on each machine</strong>, with the ball it was scored with and your mastery levels, and the time it was set.</li>
+    </ul>
+    <p><strong>Your player name and best scores are public:</strong> other players see them on the rankings in the game. Do not use your full real name if you do not want it shown.</p>
+    <p><strong>Store sign-in.</strong> On Android the game signs you in with Google Play Games, and on iOS with Apple Game Center, so the same ranking record comes back if you reinstall the game or change phone. From that sign-in the game receives your player ID and display name there; never your email or password.</p>
+    <p>This record is used only for the rankings. It is not used for advertising, not sold, and not shared with anyone except Google as the service that stores it.</p>
+
+    <h3>Deleting your ranking data</h3>
+    <p>In the game: <strong>Profile → DELETE MY ONLINE DATA</strong>. This deletes your player name, your scores on every ranking and your user ID immediately; your progress on the phone stays. You can also ask us to delete it without the game: see <a href="../arcade-hoops-delete/">how to delete your data</a>, or write to <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a> with your player name. We delete it within 30 days.</p>
+
+    <h2>5. What we do not do</h2>
+    <ul>
+      <li>No password or email is ever requested.</li>
       <li>No advertising, and no advertising ID.</li>
       <li>No access to your photos, camera, microphone, location or contacts.</li>
-      <li>The game uses the internet only to send the anonymous statistics above. Vibration is used for haptic feedback.</li>
+      <li>The game uses the internet only for the anonymous statistics above and, from version 1.1, the world ranking. Vibration is used for haptic feedback.</li>
     </ul>
 
-    <h2>5. Purchases</h2>
+    <h2>6. Purchases</h2>
     <p>Tickets, machines, balls and boosters are earned and spent inside the game. There are no real-money purchases in the current version. If that changes, this policy will be updated before the change is released.</p>
 
-    <h2>6. Children</h2>
+    <h2>7. Children</h2>
     <p>Arcade Hoops is a general-audience game and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 
-    <h2>7. Changes to this policy</h2>
+    <h2>8. Changes to this policy</h2>
     <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
 
-    <h2>8. Contact</h2>
+    <h2>9. Contact</h2>
     <p>Questions about this policy, or a request about your data: <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a></p>
   </section>
 

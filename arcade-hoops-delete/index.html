@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Delete your data — Arcade Hoops</title>
+  <meta name="description" content="How to delete your Arcade Hoops world-ranking data." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --link: #0b5fff;
+      --rule: #e3e3e3;
+      --code-bg: #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15171a;
+        --fg: #ececec;
+        --muted: #a8aaad;
+        --link: #6ea8ff;
+        --rule: #2a2d31;
+        --code-bg: #1f2125;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Hebrew", "Arial Hebrew", sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+      padding: 32px 20px 80px;
+    }
+    main { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin-top: 0; }
+    h2 { font-size: 1.35rem; margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid var(--rule); }
+    h3 { font-size: 1.1rem; margin-top: 1.6em; }
+    .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.5em; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    .lang-switch { margin: 1em 0 2em; }
+    .lang-switch a { display: inline-block; padding: 6px 14px; border: 1px solid var(--rule); border-radius: 999px; margin-inline-end: 8px; }
+    .section { margin-bottom: 2em; }
+    .en { direction: ltr; text-align: left; }
+    .he { direction: rtl; text-align: right; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 3em 0; }
+    code { background: var(--code-bg); padding: 1px 6px; border-radius: 4px; font-size: .92em; }
+    .scope {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin: 1.5em 0;
+      font-size: .98rem;
+    }
+    .scope strong { display: block; margin-bottom: 4px; }
+    .footer-note { color: var(--muted); font-size: .9rem; margin-top: 3em; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Delete your data — Arcade Hoops</h1>
+  <p class="meta">Arcade Hoops ("Basketball Arcade Machines 3D") · Developer: Hezi Dimri · Contact: <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a></p>
+  <section class="en">
+    <h2>What can be deleted</h2>
+    <p>From version 1.1 the game keeps a small record for the world ranking: a random user ID, your player name, and your best score on each machine (with the ball and mastery levels shown next to it). Everything else (tickets, balls, machines, settings) stays on your phone and is deleted when you uninstall the game. Details are in the <a href="../arcade-hoops-privacy/">privacy policy</a>.</p>
+
+    <h2>In the game (immediate)</h2>
+    <ol>
+      <li>Open the game and tap <strong>PROFILE</strong> (top left).</li>
+      <li>Tap <strong>DELETE MY ONLINE DATA</strong>, then <strong>DELETE</strong>.</li>
+    </ol>
+    <p>Your player name, your scores on every ranking and your user ID are deleted at once. Your progress on the phone stays.</p>
+
+    <h2>Without the game</h2>
+    <p>Email <a href="mailto:dimrihezi@gmail.com?subject=Arcade%20Hoops%20data%20deletion">dimrihezi@gmail.com</a> with the subject "Arcade Hoops data deletion" and your player name as it appears on the ranking. We delete the record, and every score under it, within 30 days and reply when it is done.</p>
+
+    <h2>What is kept</h2>
+    <p>Nothing linked to you. Anonymous usage statistics (Firebase Analytics, not linked to the ranking record) expire on their own after at most 14 months.</p>
+  </section>
+</main>
+</body>
+</html>
