@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Turbo Loop</title>
+  <meta name="description" content="Privacy policy of the Turbo Loop racing game." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --link: #0b5fff;
+      --rule: #e3e3e3;
+      --code-bg: #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15171a;
+        --fg: #ececec;
+        --muted: #a8aaad;
+        --link: #6ea8ff;
+        --rule: #2a2d31;
+        --code-bg: #1f2125;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Hebrew", "Arial Hebrew", sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+      padding: 32px 20px 80px;
+    }
+    main { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin-top: 0; }
+    h2 { font-size: 1.35rem; margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid var(--rule); }
+    h3 { font-size: 1.1rem; margin-top: 1.6em; }
+    .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.5em; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    .lang-switch { margin: 1em 0 2em; }
+    .lang-switch a { display: inline-block; padding: 6px 14px; border: 1px solid var(--rule); border-radius: 999px; margin-inline-end: 8px; }
+    .section { margin-bottom: 2em; }
+    .en { direction: ltr; text-align: left; }
+    .he { direction: rtl; text-align: right; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 3em 0; }
+    code { background: var(--code-bg); padding: 1px 6px; border-radius: 4px; font-size: .92em; }
+    .scope {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin: 1.5em 0;
+      font-size: .98rem;
+    }
+    .scope strong { display: block; margin-bottom: 4px; }
+    .footer-note { color: var(--muted); font-size: .9rem; margin-top: 3em; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — Turbo Loop</h1>
+  <p class="meta">Effective date: November 12, 2026 · Developer: Hezi Dimri · Contact: <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a></p>
+
+  <div class="scope">
+    <strong>App covered by this policy</strong>
+    Turbo Loop — Android package <code>com.hezi.turboloop</code>
+  </div>
+
+  <section class="en">
+    <h2>1. Overview</h2>
+    <p>Turbo Loop is an arcade racing game. It needs no password or email, and never asks for your photos, contacts or location. It has a world ranking for every track (section 3), which stores a driver name and your best race on our servers, and it shows advertisements served by Google AdMob (section 4). The game does not use analytics or crash-reporting services.</p>
+
+    <h2>2. What stays on your device</h2>
+    <ul>
+      <li><strong>Game progress.</strong> Coins, cars, upgrades, stars and unlocked tracks are saved on your device only.</li>
+      <li><strong>Settings.</strong> Sound, music and track-edge preferences are saved on your device only.</li>
+    </ul>
+    <p>Uninstalling the game, or clearing its data in your phone's settings, deletes them.</p>
+
+    <h2>3. The world ranking</h2>
+    <p>Each track has a ranking of the 100 fastest drivers, and in every race you drive against three of them. To place you on it, the game keeps a small record for you on Google Firebase (Firebase Authentication and Cloud Firestore, services of Google LLC):</p>
+    <ul>
+      <li><strong>A random user ID</strong> created by Firebase the first time you finish a race. It is not your name, email or phone number.</li>
+      <li><strong>Your driver name.</strong> The game gives you one at first (for example "RACER4821", or the name of your Google Play Games profile) and you can change it at any time in the game's Settings.</li>
+      <li><strong>Your best race on each track:</strong> its time, the car, colour and upgrades you used, and a recording of the line you drove (your position across the road and your speed around the lap), so that other players can race against it.</li>
+    </ul>
+    <p><strong>Your driver name, best times, car and driving line are public:</strong> other players see them on the rankings and race against them in the game. Do not use your full real name if you do not want it shown.</p>
+    <p><strong>Store sign-in.</strong> On Android the game can sign you in with Google Play Games, so the same ranking record comes back if you reinstall the game or change phone. From that sign-in the game receives your player ID and display name there; never your email or password.</p>
+    <p>This record is used only for the rankings. It is not used for advertising, not sold, and not shared with anyone except Google as the service that stores it.</p>
+
+    <h3>Deleting your ranking data</h3>
+    <p>Write to <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a> with your driver name and we will delete your driver name, your races on every ranking and your user ID within 30 days. Your progress on the phone is not affected.</p>
+
+    <h2>4. Advertising (Google AdMob)</h2>
+    <p>The game shows a full-screen advertisement between some races, and an optional video advertisement that you can choose to watch to double the coins of a race. The ads are served by Google AdMob, a service of Google LLC. To serve and measure them, AdMob collects on its own behalf:</p>
+    <ul>
+      <li><strong>The device's advertising ID</strong>, the device model, operating system version, language, an approximate location derived from the IP address, and ad activity such as which ads were shown and tapped.</li>
+    </ul>
+    <p>Google uses this data to show ads and to limit how often you see the same one, and, where you have agreed to it, to personalize them. We do not receive this data and do not give Google anything else about you.</p>
+    <p><strong>Your choices.</strong> In the European Economic Area, the United Kingdom and Switzerland the game asks for your consent before it shows any ad; to change that choice, open <strong>Settings → Ad choices</strong> in the game. Everywhere, you can reset or delete the advertising ID and opt out of personalized ads in your phone's settings (Android: Settings → Google → Ads). Google explains its use of advertising data at <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use its services</a> and in its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+
+    <h2>5. What we do not do</h2>
+    <ul>
+      <li>No password or email is ever requested.</li>
+      <li>No access to your photos, camera, microphone, location or contacts.</li>
+      <li>No analytics and no crash reporting. The game uses the internet only for the world ranking, the Google Play Games sign-in and the advertisements.</li>
+    </ul>
+
+    <h2>6. Purchases</h2>
+    <p>Coins, cars and upgrades are earned and spent inside the game. There are no real-money purchases in the current version. If that changes, this policy will be updated before the change is released.</p>
+
+    <h2>7. Children</h2>
+    <p>Turbo Loop is a general-audience game and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about this policy, or a request about your data: <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a></p>
+  </section>
+
+  <p class="footer-note">This policy applies only to the Turbo Loop app.</p>
+</main>
+</body>
+</html>
