@@ -71,16 +71,16 @@
 
   <section class="en">
     <h2>1. Overview</h2>
-    <p>Turbo Loop is an arcade racing game. It needs no password or email, and never asks for your photos, contacts or location. It has a world ranking for every track (section 3), which stores a driver name and your best race on our servers, and it shows advertisements served by Google AdMob (section 4). The game does not use analytics or crash-reporting services.</p>
+    <p>Turbo Loop is an arcade racing game. It needs no password or email, and never asks for your photos, contacts or location. It has a world ranking for every track (section 3), which stores a driver name and your best race on our servers, it keeps a private backup copy of your game progress there (section 3), and it shows advertisements served by Google AdMob (section 4). The game does not use analytics or crash-reporting services.</p>
 
-    <h2>2. What stays on your device</h2>
+    <h2>2. What is saved on your device</h2>
     <ul>
-      <li><strong>Game progress.</strong> Coins, cars, upgrades, stars and unlocked tracks are saved on your device only.</li>
+      <li><strong>Game progress.</strong> Coins, cars, upgrades, stars and unlocked tracks are saved on your device. Once you have finished a race, a private backup copy is also kept online (section 3).</li>
       <li><strong>Settings.</strong> Sound, music and track-edge preferences are saved on your device only.</li>
     </ul>
-    <p>Uninstalling the game, or clearing its data in your phone's settings, deletes them.</p>
+    <p>Uninstalling the game, or clearing its data in your phone's settings, deletes what is on the device.</p>
 
-    <h2>3. The world ranking</h2>
+    <h2>3. The world ranking and your progress backup</h2>
     <p>Each track has a ranking of the 100 fastest drivers, and in every race you drive against three of them. To place you on it, the game keeps a small record for you on Google Firebase (Firebase Authentication and Cloud Firestore, services of Google LLC):</p>
     <ul>
       <li><strong>A random user ID</strong> created by Firebase the first time you finish a race. It is not your name, email or phone number.</li>
@@ -89,10 +89,11 @@
     </ul>
     <p><strong>Your driver name, best times, car and driving line are public:</strong> other players see them on the rankings and race against them in the game. Do not use your full real name if you do not want it shown.</p>
     <p><strong>Store sign-in.</strong> On Android the game can sign you in with Google Play Games, so the same ranking record comes back if you reinstall the game or change phone. From that sign-in the game receives your player ID and display name there; never your email or password.</p>
-    <p>This record is used only for the rankings. It is not used for advertising, not sold, and not shared with anyone except Google as the service that stores it.</p>
+    <p><strong>Progress backup.</strong> Under the same random user ID the game also keeps a copy of your game progress: coins, cars and upgrades, stars, daily-bonus streak, driver name, best races and in-game settings. Unlike the ranking, this copy is private: only your own game can read it, and no other player sees it. It is there so that your progress is not lost and can come back after a reinstall or on a new phone when you are signed in with Google Play Games.</p>
+    <p>These records are used only for the rankings and for restoring your progress. They are not used for advertising, not sold, and not shared with anyone except Google as the service that stores them.</p>
 
-    <h3>Deleting your ranking data</h3>
-    <p>In the game: <strong>Settings → Online data → DELETE</strong>. This deletes your driver name, your races on every ranking and your user ID immediately; your progress on the phone stays. If you race again afterwards, a new ranking record is created. You can also ask us to delete it without the game: write to <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a> with your driver name and we will delete it within 30 days.</p>
+    <h3>Deleting your online data</h3>
+    <p>In the game: <strong>Settings → Online data → DELETE</strong>. This deletes your driver name, your races on every ranking, the backup copy of your progress and your user ID immediately; your progress on the phone stays. If you race again afterwards, a new record is created. You can also ask us to delete it without the game: write to <a href="mailto:dimrihezi@gmail.com">dimrihezi@gmail.com</a> with your driver name and we will delete it within 30 days.</p>
 
     <h2>4. Advertising (Google AdMob)</h2>
     <p>The game shows a full-screen advertisement between some races, and an optional video advertisement that you can choose to watch to double the coins of a race. The ads are served by Google AdMob, a service of Google LLC. To serve and measure them, AdMob collects on its own behalf:</p>
@@ -106,7 +107,7 @@
     <ul>
       <li>No password or email is ever requested.</li>
       <li>No access to your photos, camera, microphone, location or contacts.</li>
-      <li>No analytics and no crash reporting. The game uses the internet only for the world ranking, the Google Play Games sign-in and the advertisements.</li>
+      <li>No analytics and no crash reporting. The game uses the internet only for the world ranking, the progress backup, the Google Play Games sign-in and the advertisements.</li>
     </ul>
 
     <h2>6. Purchases</h2>
